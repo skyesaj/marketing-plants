@@ -332,8 +332,10 @@ header {
 }
 @media (max-width: 1000px) {
   .holder .main-cta .logo-cta {
-    max-width: 300px;
+    max-width: 196px;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 .holder .main-cta .cta-text {
@@ -350,11 +352,28 @@ header {
 .holder .main-cta .cta-text span {
   text-shadow: 3px 3px 0px black;
 }
+@media (max-width: 600px) {
+  .holder .main-cta .cta-text span {
+    text-shadow: 2px 2px 0 black;
+  }
+}
 .holder .main-cta .cta-text .blue {
   color: #60b6ff;
 }
+@media (max-width: 600px) {
+  .holder .main-cta .cta-text .blue {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+}
 .holder .main-cta .cta-text .green {
   color: #00e64d;
+}
+@media (max-width: 600px) {
+  .holder .main-cta .cta-text .green {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
 }
 .holder .main-cta .cta-text .cta-button {
   text-transform: uppercase;
@@ -379,6 +398,7 @@ header {
   .holder .main-cta .cta-text .cta-button {
     font-size: 2rem;
     margin-bottom: 4rem;
+    min-width: 50vw;
   }
 }
 .speech-bubble {
@@ -450,12 +470,7 @@ header {
   min-height: 4rem;
 }
 .img-helper {
-  max-width: 300px;
-}
-@media (max-width: 600px) {
-  .img-helper {
-    max-width: 128px;
-  }
+  max-width: 200px;
 }
 .white {
   color: white;
@@ -463,7 +478,7 @@ header {
 }
 .whiteh1 {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .contain-me {
@@ -501,6 +516,9 @@ form#contact {
   .right-dk {
     width: 100%;
   }
+}
+.left-lt {
+  margin-bottom: 2rem;
 }
 .left-lt .whiteh1 {
   text-align: left;

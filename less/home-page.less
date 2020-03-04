@@ -35,11 +35,15 @@ header {
             padding: 0 2.5%;
 
             @media @max1000 {
-                max-width: 300px;
+                max-width: 196px;
                 margin-bottom: 2rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
             }
 
         }
+
+    
 
         .cta-text {
             display: flex;
@@ -53,15 +57,31 @@ header {
 
                 span {
                     text-shadow: 3px 3px 0px black;
+
+                    @media @max600 {
+                        text-shadow: 2px 2px 0 black;
+                    }
                 }
+
+
             
 
                 .blue {
                     color: #60b6ff;
+
+                    @media @max600 {
+                        font-size: 3rem;
+                        margin-left: 2rem;
+                    }
                 }
 
                 .green {
                     color: #00e64d;
+
+                    @media @max600 {
+                        font-size: 3rem;
+                        margin-left: 2rem;
+                    }
                 }
 
                 .cta-button {
@@ -87,7 +107,10 @@ header {
                     @media @max1000 {
                         font-size: 2rem;
                         margin-bottom: 4rem;
+                        min-width: 50vw;
                     }
+
+                  
                 }
         }
 
@@ -203,11 +226,7 @@ header {
 //global stuff
 
 .img-helper {
-    max-width: 300px;
-
-    @media @max600 {
-        max-width: 128px;
-    }
+    max-width: 200px;
 }
 
 .white {
@@ -217,7 +236,7 @@ header {
 
 .whiteh1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -278,6 +297,8 @@ form#contact {
     .whiteh1 {
         text-align: left;
     }
+
+    margin-bottom: 2rem;
 
     @media @max600 {
         width: 100%;
