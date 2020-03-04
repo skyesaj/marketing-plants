@@ -206,8 +206,10 @@ nav .nav-items a {
   padding: 0 2%;
 }
 nav .nav-items .nav-right {
-  display: inline-block;
-  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
   text-align: center;
   margin-left: ;
 }
@@ -219,6 +221,9 @@ nav .nav-items .nav-right {
 nav img {
   max-height: 4rem;
   padding: 0.5% 0;
+}
+.min {
+  min-width: 160px !important;
 }
 @keyframes jump {
   0% {
@@ -343,6 +348,7 @@ header {
   flex-direction: column;
   justify-content: center;
   font-size: 4rem;
+  line-height: 4rem;
 }
 @media (max-width: 1000px) {
   .holder .main-cta .cta-text {
@@ -350,11 +356,11 @@ header {
   }
 }
 .holder .main-cta .cta-text span {
-  text-shadow: 3px 3px 0px black;
+  text-shadow: 3px 3px 5px black;
 }
 @media (max-width: 600px) {
   .holder .main-cta .cta-text span {
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 2px 2px 5 black;
   }
 }
 .holder .main-cta .cta-text .blue {
@@ -443,6 +449,9 @@ header {
 .main-contain-lt {
   background-color: #5a5a5a;
   padding: 6rem 0;
+}
+.main-contain-lt .whiteh1 {
+  text-align: right !important;
 }
 .content {
   max-width: 1000px;
@@ -657,5 +666,85 @@ fieldset {
 }
 :-ms-input-placeholder {
   color: #888;
+}
+.contain-team {
+  background-image: url('../img/water.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.contain-team .teamsters {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contain-team .teamsters h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 0;
+}
+.contain-team .teamsters .team-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 4rem;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin: 2rem 4rem;
+}
+@media (max-width: 1000px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team-person {
+  max-width: 200px;
+}
+.pot {
+  max-width: 250px;
+  margin-top: -5px;
+}
+.row-me {
+  display: flex;
+  align-items: space-evenly;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 12rem;
+}
+.data {
+  margin-top: -175px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.name {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.position {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+.member {
+  text-align: center;
+  margin-top: 10rem;
+  min-width: 250px;
+}
+.position {
+  font-size: 1.2rem;
 }
 /*end import*/

@@ -1,7 +1,8 @@
 <html lang="en">
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Water My Plants - We Remind You So You Don't Have To</title>
     <link rel="stylesheet" href="css/index.css">
@@ -15,40 +16,151 @@
     
     -->
 
-<nav>
 
 
-    <div class="nav-items"> <!--start nav items-->
-        
-        <div class="nav-left">
+<header>
 
-            <img src="img/leaf-white.svg" alt="">
+    <nav>
 
-        </div>
 
-        <div class="nav-right">
-
-            <a href="index.html" class="">home</a>
-
-            <a href="#HIW" class="">how it works</a>
-
-            <a href="#APP" class="">app</a>
-
-            <a href="#" class="">our team</a>
-
-            <a href="#CONTACT" class="">contact</a>
-
-        </div>
+        <div class="nav-items"> <!--start nav items-->
     
-    </div> <!--end nav items-->
+            <div class="nav-right">
+    
+                <a href="index.html"><img src="img/leaf-white.svg" alt=""></a>
+    
+                <a href="#HIW" class="min">how it works</a>
+    
+                <a href="#APP" class="">app</a>
+    
+                <a href="team.html" class="">team</a>
+    
+                <a href="#CONTACT" class="">contact</a>
+    
+                <a href="#CONTACT" class="">login</a>
+    
+            </div>
+        
+        </div> <!--end nav items-->
+    
+    </nav>
 
-</nav>
+</header>
    
 <body>
 
     <section>
 
+        <div class="contain-team">
+            <div class="teamsters">
+                <h1>our team</h1>
+                <div class="team-lead">
+
+                    <img src="img/jonathan.png" alt="" class="team-person">
+                    <img src="img/pot.svg" alt="" class="pot">
+
+                        <div class="data">
+                            <span class="name">Jonathan Ferrer</span>
+                            <span class="position">team lead</span>
+                        </div>
+
+                    </div>
+
+            </div>
+
+                    <div class="team">
+
+                            <div class="member">
+                
+                            <img src="img/todd.png" alt="" class="team-person">
+                            <img src="img/pot.svg" alt="" class="pot">
+        
+                                <div class="data">
+                                    <span class="name">Todd</span>
+                                    <span class="position">React II Developer</span>
+                                </div>
+                        
+                            </div>
+
+                            <div class="member">
+                    
+                                <img src="img/neel.png" alt="" class="team-person">
+                                <img src="img/pot.svg" alt="" class="pot">
+            
+                                    <div class="data">
+                                        <span class="name">NEEL</span>
+                                        <span class="position">React I Developer</span>
+                                    </div>
+                            
+                                </div>
+
+                        </div>
+
+
+
+                        <div class="team">
+
+                            <div class="member">
+                
+                            <img src="img/skye.png" alt="" class="team-person">
+                            <img src="img/pot.svg" alt="" class="pot">
+        
+                                <div class="data">
+                                    <span class="name">Skye</span>
+                                    <span class="position">Back-end Developer</span>
+                                </div>
+                        
+                            </div>
+
+
+                                        <div class="member">
+                    
+                                            <img src="img/arash.png" alt="" class="team-person">
+                                            <img src="img/pot.svg" alt="" class="pot">
+                        
+                                                <div class="data">
+                                                    <span class="name">Arash</span>
+                                                    <span class="position">Back-end Developer</span>
+                                                </div>
+                                        
+                                            </div>
+
+                                            <div class="member">
+                    
+                                                <img src="img/james.png" alt="" class="team-person">
+                                                <img src="img/pot.svg" alt="" class="pot">
+                            
+                                                    <div class="data">
+                                                        <span class="name">Jay</span>
+                                                        <span class="position">FRONT-END DEVELOPER</span>
+                                                    </div>
+                                            
+                                                </div>
+
+                        </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+            
+        
+   
+
+
+
+    </section>
+
+
+
+    <section>
+
         <div class="main-contain-dk">
+
+            <div class="stopper" id="HIW"></div>
 
             <div class="content"> <!--main content holder-->
 
@@ -60,7 +172,7 @@
 
                 <div class="right-dk">
 
-                    <h1 class="whiteh1" id="HIW">water my plants</h1>
+                    <h1 class="whiteh1">water my plants</h1>
 
                     <span class="white">We all live busy lives and have trouble remembering things. Water My Plants was created to solve one of life's biggest problems! Remembering to water your plants. 
                     </span>
@@ -133,42 +245,29 @@
 
     <section id="CONTACT">
 
-        <div class="main-contain-lt">
-
-            <div class="contain-me">
-
-                <center><h3 class="whiteh1">contact us</h3></center>
-
-            </div>
-
-            <div id="page-wrap">
-
+    
+        <form id="contact" action="" method="post">
+            <h3>CONTACT US</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
               
-                        
-                <div id="contact-area">
-                    
-                    <form method="post" action="contactengine.php">
-                        <label for="Name">Name:</label>
-                        <input type="text" name="Name" id="Name" />
-                        
-                        <label for="City">City:</label>
-                        <input type="text" name="City" id="City" />
             
-                        <label for="Email">Email:</label>
-                        <input type="text" name="Email" id="Email" />
-                        
-                        <label for="Message">Message:</label><br />
-                        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
-        
-                        <input type="submit" name="submit" value="Submit" class="submit-button" />
-                    </form>
-                    
-                    
-                    
-                
-                </div>
-            
-            </div>
+   
             
         </div>
 
@@ -178,7 +277,7 @@
 
 
 
-
+</body>
 
 
 
