@@ -345,6 +345,7 @@ header {
   flex-direction: column;
   justify-content: center;
   font-size: 4rem;
+  line-height: 4rem;
 }
 @media (max-width: 1000px) {
   .holder .main-cta .cta-text {
@@ -352,11 +353,11 @@ header {
   }
 }
 .holder .main-cta .cta-text span {
-  text-shadow: 3px 3px 0px black;
+  text-shadow: 3px 3px 5px black;
 }
 @media (max-width: 600px) {
   .holder .main-cta .cta-text span {
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 2px 2px 5 black;
   }
 }
 .holder .main-cta .cta-text .blue {
@@ -445,6 +446,9 @@ header {
 .main-contain-lt {
   background-color: #5a5a5a;
   padding: 6rem 0;
+}
+.main-contain-lt .whiteh1 {
+  text-align: right !important;
 }
 .content {
   max-width: 1000px;
