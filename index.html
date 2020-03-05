@@ -9,100 +9,97 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!--save for later
-    
-    font-family: 'Montserrat', ;
 
-    
-    -->
-
-
-
-<header>
+<header> <!--start header-->
   
-    <div class="nav-special">
-        <a href="#" class="login">login</a>
-            <a href="#" class="signup">Sign up</a>
-            
+    <div class="nav-special"> <!--nav over call to action home-page only-->
 
-    </div>
+        <a href="#" class="login">login</a>
+        <a href="#" class="signup">Sign up</a>     
+
+    </div> <!--close nav over call to action-->
 
 
 <!--start header CTA-->
 
     <div class="holder"> <!--start holder | holds bg image and flex-->
 
-      
+        <div class="speech-bubble"> <!--start notification bubble-->
 
+            <div class="notification">
 
-<div class="speech-bubble">
+                <div class="notification-text">
+                    <p class="hard"><strong>Water My Plants</strong> - 
+                    
+                        <script type="text/javascript"> <!--start inline JS-->
+                            window.onload = function () {
+                                DisplayCurrentTime();
+                            };
+                            function DisplayCurrentTime() {
+                                var date = new Date();
+                                var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+                                var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+                                hours = hours < 10 ? "" + hours : hours;
+                                var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+                                var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+                                time = hours + ":" + minutes + ""  + " " + am_pm;
+                                var lblTime = document.getElementById("lblTime");
+                                lblTime.innerHTML = time;
+                            };
+                        </script>
+                        
+                        <span id="lblTime">
+                            <!--holds time-->
+                        </span>        
+                    
+                    </p> <!--end water my plants p class-->
 
-    <div class="notification">
+                    <p>It's time to water your cactus! </p>
 
-        <div class="notification-text">
-            <p class="hard"><strong>Water My Plants</strong> - 
-            
-                <script type="text/javascript">
-                    window.onload = function () {
-                        DisplayCurrentTime();
-                    };
-                    function DisplayCurrentTime() {
-                        var date = new Date();
-                        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-                        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
-                        hours = hours < 10 ? "" + hours : hours;
-                        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-                        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-                        time = hours + ":" + minutes + ""  + " " + am_pm;
-                        var lblTime = document.getElementById("lblTime");
-                        lblTime.innerHTML = time;
-                    };
-                </script>
-                <span id="lblTime"></span>
+                </div>
+                <div class="cactus"><img src="img/cactus.svg" alt="" class="notification-cactus"></div>
 
+            </div>
 
-            
-            
-            </p>
-            <p>It's time to water your cactus! </p>
-        </div>
-        <div class="cactus"><img src="img/cactus.svg" alt="" class="notification-cactus"></div>
-
-    </div>
-
-</div>
-
-
-
-
+        </div> <!--end notification bubble-->
           
-        <div class="main-cta">
+        <div class="main-cta"> <!--main-cta holds the logo and cta text/button-->
 
             <img src="img/logo-earth.svg" alt="" class="logo-cta">
             
-                <div class="cta-text">
+                <div class="cta-text"> <!--start cta-text-->
 
                     <span class="blue">We remind you</span>
+
                     <span class="green">So you don't have to!</span>
                     
                     <a href="https://wmp3.now.sh/login" class="cta-button">get on the app</a>
-                    
 
-                </div>
-
-                
+                </div>  <!--end cta-text-->      
             
         </div> <!--end main-cta-->
-<center><span class="whiteh1">learn more</span></center>
-<a href="#nav">  <!-- Link to content ID -->
-  <div id="arrow-down">
-    <i class="fa fa-chevron-down" style="color:#ffffff;"></i>
-  </div>
-</a>
+
+            <center><span class="whiteh1">learn more</span></center> <!--center is used as a helper class-->
+
+
+            <a href="#nav">  <!--starts arrow down-->
+
+            <div id="arrow-down">
+
+                <i class="fa fa-chevron-down" style="color:#ffffff;"></i>
+
+            </div>
+            
+            </a> <!--end arrow down-->
 
     </div>    <!--end holder-->
 
-</header>
+</header> <!--end of header section-->
+
+
+
+
+
 
 <nav id="nav">
 
@@ -127,33 +124,37 @@
 
 </nav>
    
-<body>
+<body> 
 
-    <section>
+    <section> <!--starts main content after team-->
 
-        <div class="main-contain-dk">
+        <div class="main-contain-dk"> <!--starts main-contain-dk-->
 
-            <div class="content"> <!--main content holder-->
+            <div class="stopper" id="HIW">
 
-                <div class="left-dk">
+            </div> <!--functions as same-page ahref-->
 
-                    <img src="img/chat.svg" alt="" class="img-helper">
+                <div class="content"> <!--main content holder-->
 
-                </div>
+                    <div class="left-dk">
 
-                <div class="right-dk">
+                        <img src="img/chat.svg" alt="" class="img-helper">
 
-                    <h1 class="whiteh1">water my plants</h1>
+                    </div>
 
-                    <span class="white">We all live busy lives and have trouble remembering things. Water My Plants was created to solve one of life's biggest problems! Remembering to water your plants. 
-                    </span>
+                    <div class="right-dk">
 
-                </div>
+                        <h1 class="whiteh1">water my plants</h1>
 
-            </div> <!--closeds main content holder-->
+                        <span class="white">We all live busy lives and have trouble remembering things. Water My Plants was created to solve one of life's biggest problems! Remembering to water your plants. 
+                        </span>
+
+                    </div>
+
+            </div> <!--closes content-->
             
             
-        </div>
+        </div> <!--ends main-contain-dk-->
 
     </section>
 
@@ -185,7 +186,7 @@
     </section>
 
 
-    <section id ="APP">
+    <section id ="APP"> <!--start section about app details-->
 
         <div class="main-contain-dk">
 
@@ -211,10 +212,10 @@
             
         </div>
 
-    </section>
+    </section> <!--ends app section-->
 
 
-    <section id="CONTACT">
+    <section id="CONTACT"> <!--starts contact form-->
 
     
         <form id="contact" action="" method="post">
@@ -235,24 +236,15 @@
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
-          </form>
-              
-            
-   
+          </form>   
             
         </div>
 
-    </section>
+    </section> <!--ends contact form-->
 
+</body> <!--ends body-->
 
-
-
-
-</body>
-
-
-
- <footer>
+ <footer> <!--start footer content-->
 
     <div class="footer">
 
@@ -264,14 +256,6 @@
     </div>
 
 
-</footer>
+</footer> 
 
- </section>
-
-
-
-
-
-
-</body>
 </html>
