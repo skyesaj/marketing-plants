@@ -652,8 +652,8 @@ fieldset {
 #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-#contact input:focus,
-#contact textarea:focus {
+#contact input:none,
+#contact textarea:none {
   outline: 0;
   border: 1px solid #999;
 }
@@ -668,6 +668,9 @@ fieldset {
 }
 :-ms-input-placeholder {
   color: #888;
+}
+.team-person {
+  max-width: 200px;
 }
 .contain-team {
   background-image: url('../img/water.jpg');
@@ -707,9 +710,6 @@ fieldset {
     align-items: center;
   }
 }
-.team-person {
-  max-width: 200px;
-}
 .pot {
   max-width: 250px;
   margin-top: -5px;
@@ -739,14 +739,11 @@ fieldset {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 4rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .member {
   text-align: center;
   margin-top: 10rem;
   min-width: 250px;
-}
-.position {
-  font-size: 1.2rem;
 }
 /*end import*/
