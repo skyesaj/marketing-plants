@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "marketing-plants",
+  "builds": [
+    {
+      "src": "marketing-plants/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "marketing-plants/$1" }]
+}
